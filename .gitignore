@@ -1,6 +1,27 @@
-DATA_ALL/
-CHECKPOINTS_ALL/
-siamesenn_env/
-**/__pycache__/
-**/.pytest_cache/
-**/*.pyc
+# Datasets, checkpoints and generated output
+/DATA_ALL/
+/CHECKPOINTS_ALL/
+/outputs/
+*.log
+
+# Local environment configuration
+.env
+.env.*
+!.env.example
+
+# Python environments and caches
+/.venv/
+/venv/
+/siamesenn_env/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+
+# Local editor and operating system files
+/.vscode/
+/.idea/
+.DS_Store
+Thumbs.db
+
+# Keep historical logs available in fresh clones
+!/reports/logs/**/*.log
